@@ -11,8 +11,8 @@ vim.cmd("set path=.,**")
 vim.g.spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 
 -- 42 Header Settings
-vim.g.user42 = 'cadet'
-vim.g.mail42 = 'cadet@student.42porto.com'
+vim.g.user42 = 'dda-fons'
+vim.g.mail42 = 'dda-fons@student.42porto.com'
 
 -- Rest.nvim
 vim.g.rest_nvim = {

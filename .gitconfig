@@ -1,8 +1,8 @@
 [credential "https://github.com"]
 	helper = 
 [user]
-	name = Zedro
-	email = zedro@zedro.com
+	name = Danielfonsecaa
+	email = danieldafonseca@sapo.pt
 [core]
 	editor = nvim
 [credential]
