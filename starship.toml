@@ -7,7 +7,7 @@ format = '''
 $virtualenv$directory$git_branch$git_commit$git_status$c$cmd_duration$python$nix_shell$shlvl
 $jobs$hostname$username $shell $character
 '''
-right_format = "$status${custom.minitalk}${custom.valgrind}$localip$time $battery$os"
+right_format = "$status${custom.valgrind}$localip$time $battery$os"
 
 continuation_prompt = '▶▶ '
 # Don't print a new line at the start of the prompt
@@ -17,7 +17,7 @@ scan_timeout = 77
 
 [localip]
 ssh_only = true
-format = '[$localipv4]($style) '
+format = '[t$localipv4]($style) '
 style = "bold dimmed white"
 disabled = false
 
@@ -33,7 +33,7 @@ style = "bold red"
 [character]
 format = "$symbol "
 error_symbol = "[❭](bold red)"
-success_symbol = "[❭](bold yellow)"
+success_symbol = "[❭](bold green)"
 vimcmd_symbol = "[❭ ](bold green)"
 vimcmd_replace_one_symbol = "[❭ ](bold purple)"
 vimcmd_replace_symbol = "[❭ ](bold purple)"
@@ -92,7 +92,7 @@ zsh_indicator = ''
 powershell_indicator = '_'
 cmd_indicator = ''
 unknown_indicator = '?sh'
-style = 'bold yellow'
+style = 'bold purple'
 disabled = false
 
 [shlvl]
@@ -114,7 +114,7 @@ disabled = false
 format = ' [$symbol$int $signal_name]($style) '
 pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](bold cyan) '
 pipestatus_separator = '[|](bold cyan)'
-style = 'fg:yellow'
+style = 'fg:cyan'
 symbol = '[](bold red) '
 success_symbol = ' '
 not_found_symbol = '[](bold red) '
@@ -130,12 +130,12 @@ ssh_symbol = " "
 ssh_only = false
 format = '[\[](bold green)[$hostname]($style)[\]](bold green)'
 trim_at = "-"
-style = "bold yellow"
+style = "bold white"
 disabled = false
 
 [username]
 format = '[\[](bold green)[$user]($style)[\]](bold green)'
-style_user = "bold blue"
+style_user = "bold cyan"
 style_root = 'black bold'
 disabled = false
 show_always = true
@@ -235,8 +235,8 @@ symbol = "  "
 impure_msg = '[💩](bold red)'
 pure_msg = '[😇](bold green)'
 unknown_msg = '[unknown](bold yellow)'
-format = 'via [$symbol$state( \($name\))](bold blue) '
-style = 'bold blue'
+format = 'via [$symbol$state( \($name\))](bold cyan) '
+style = 'bold cyan'
 disabled = false
 # heuristic = true
 

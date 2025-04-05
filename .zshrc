@@ -40,12 +40,16 @@
 # Compiling
 alias ccw='cc -Wall -Wextra -Werror -g'
 
+#Norminette
+alias nn='norminette -R CheckForbiddenSourceHeader'
+
 # Neovim
 alias v='nvim'
 alias sv='sudo -E nvim'
 
 # git
 alias ga='git add'
+alias gaa='git add .'
 alias gap='git add -p'
 alias gst='git status'
 alias gc='git commit -m'
